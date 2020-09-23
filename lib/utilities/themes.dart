@@ -14,6 +14,8 @@ ThemeData _buildDefaultTheme(){
 }
 
 
+
+
 TextTheme _buildTextTheme(TextTheme base) {
   return base
       .copyWith(
@@ -26,15 +28,15 @@ TextTheme _buildTextTheme(TextTheme base) {
           fontSize: 18,
         ),
         headline1: base.headline1.copyWith(
-          fontWeight: FontWeight.w400,
+          fontWeight: FontWeight.w700,
           fontSize: 48,
         ),
         headline2: base.headline2.copyWith(
-          fontWeight: FontWeight.w400,
+          fontWeight: FontWeight.w700,
           fontSize: 32,
         ),
         headline3: base.headline3.copyWith(
-          fontWeight: FontWeight.w400,
+          fontWeight: FontWeight.w700,
           fontSize: 24
         ),
       )
