@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_feather_icons/flutter_feather_icons.dart';
 import 'package:tomate/screens/screens.dart';
-import 'package:tomate/utitlies/colors.dart';
+import 'package:tomate/utilities/colors.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -50,7 +50,7 @@ class _HomeScreenState extends State<HomeScreen> {
         items: [
           BottomNavigationBarItem(
             icon: Icon(FeatherIcons.activity),
-            title: Text('Task'),
+            title: Text('Tasks'),
           ),
           BottomNavigationBarItem(
             icon: Icon(FeatherIcons.user),

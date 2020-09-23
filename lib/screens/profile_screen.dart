@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tomate/utitlies/colors.dart';
+import 'package:tomate/utilities/colors.dart';
 
 class ProfileScreen extends StatefulWidget {
   @override

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tomate/screens/home_screen.dart';
-import 'package:tomate/utitlies/colors.dart';
+import 'package:tomate/utilities/styles_utilities.dart';
 
 void main() {
   runApp(MyApp());
@@ -13,10 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primaryColor: kPrimaryColor,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
+      theme: defaultTheme,
       home: HomeScreen(),
     );
   }
