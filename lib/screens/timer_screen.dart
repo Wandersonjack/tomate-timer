@@ -1,6 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_feather_icons/flutter_feather_icons.dart';
+import 'package:flutter_sound/flutter_sound.dart';
 import 'package:tomate/utilities/colors.dart';
+
+int initalMinutes = 24;
+int initialSeconds = 60;
+String time = '25:00';
+var duration = const Duration(seconds: 1);
+var watch = Stopwatch();
+FlutterSound sound = new FlutterSound();
 
 class TimerScreen extends StatefulWidget {
   @override
@@ -8,6 +15,7 @@ class TimerScreen extends StatefulWidget {
 }
 
 class _TimerScreenState extends State<TimerScreen> {
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -49,5 +57,21 @@ class _TimerScreenState extends State<TimerScreen> {
         ),
       ),
     );
+  }
+  void _startPomodoro(){
+    if(_isPlaying()){
+      watch.stop();
+    }else{
+      watch.start();
+      _startTimer();
+    }
+  }
+
+  bool _isPlaying(){
+    return watch.isRunning;
+  }
+
+  void _startTimer(){
+
   }
 }

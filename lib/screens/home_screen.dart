@@ -27,6 +27,12 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: PreferredSize(
+        preferredSize: Size.fromHeight(0),
+        child: AppBar(
+          elevation: 0,
+        ),
+      ),
       body: SafeArea(
         child: PageView(
           controller: _pageController,
