@@ -36,7 +36,7 @@ class _HomeScreenState extends State<HomeScreen> {
       body: SafeArea(
         child: PageView(
           controller: _pageController,
-          onPageChanged: (index){
+          onPageChanged: (index) {
             setState(() {
               _currentIndex = index;
             });
@@ -64,17 +64,24 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ],
       ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        child: Icon(
+          FeatherIcons.plus,
+        ),
+      ),
     );
   }
 
-
-  void _onTappedItem(int index){
-    setState((){
+  void _onTappedItem(int index) {
+    setState(() {
       _currentIndex = index;
-      _pageController.animateToPage(index, duration: Duration(microseconds: 500,), curve: Curves.easeOut);
+      _pageController.animateToPage(index,
+          duration: Duration(
+            microseconds: 500,
+          ),
+          curve: Curves.easeOut);
     });
   }
-
 }
-
-
