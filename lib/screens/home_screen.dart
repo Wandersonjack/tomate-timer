@@ -43,7 +43,7 @@ class _HomeScreenState extends State<HomeScreen> {
           },
           children: <Widget>[
             TasksScreen(),
-            ProfileScreen(),
+           TimerScreen(),
           ],
         ),
       ),
@@ -59,8 +59,8 @@ class _HomeScreenState extends State<HomeScreen> {
             title: Text('Tasks'),
           ),
           BottomNavigationBarItem(
-            icon: Icon(FeatherIcons.user),
-            title: Text('Profile'),
+            icon: Icon(FeatherIcons.clock),
+            title: Text('Pomodoro'),
           ),
         ],
       ),
